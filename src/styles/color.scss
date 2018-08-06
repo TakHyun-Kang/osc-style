@@ -1,0 +1,415 @@
+// Last revision : 2018. 08. 01.
+
+
+
+@mixin nameLeft {
+  margin: 15px 15px;
+  display: inline-block;
+};
+
+@mixin nameLeft2 {
+  margin: 15px 0 15px 0;
+  display: inline-block;
+};
+
+@mixin codeRight {
+  float: right;
+  position: relative;
+  right: 25px;
+  top: 15px;
+};
+
+@mixin codeRight2 {
+  float: right;
+  position: relative;
+  right: 5px;
+  top: 15px;
+};
+
+@mixin emLeft {
+  margin: 15px 15px;
+  display: block;
+  line-height: 2;
+};
+
+.colorBox {
+  margin-bottom: 200px;
+  // Surface
+  .surface {
+    background-color: $Surface;
+    color: $fontColorBlack;
+    height: 100px;
+  }
+  .light {
+    background-color: $Light;
+    color: $fontColorBlack;
+    height: 50px;
+  }
+  .dark {
+    background-color: $Dark;
+    color: $fontColorBlack;
+    height: 50px;
+  }
+  // Surface Text Emphasis
+  .surfaceEp {
+    background-color: $surfaceEp;
+    height: 200px;
+    margin-bottom: 20px;
+    .col {
+      .surfaceEp87 {
+        margin-top: 35px;
+        color: $surfaceEp87;
+      }
+      .surfaceEp60 {
+        color: $surfaceEp60;
+      }
+      .surfaceEp38 {
+        color: $surfaceEp38;
+      }
+    }
+  }
+
+
+  // Primary
+  .primary {
+    background-color: $Primary;
+    height: 100px;
+    color: $fontColorBlack;
+  }
+  .primary900 {
+    background-color: $primary900;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .primary800 {
+    background-color: $primary800;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .primary700 {
+    background-color: $primary700;
+    height: 50px;
+    color: $fontColorBlack;
+  }
+  .primary600 {
+    background-color: $primary600;
+    height: 50px;
+    color: $fontColorBlack;
+  }
+  .primary500 {
+    background-color: $primary500;
+    height: 50px;
+    color: $fontColorBlack;
+  }
+  .primary400 {
+    background-color: $primary400;
+    height: 50px;
+    color: $fontColorBlack;
+  }
+  .primary300 {
+    background-color: $primary300;
+    height: 50px;
+    color: $fontColorBlack;
+  }
+  .primary200 {
+    background-color: $primary200;
+    height: 50px;
+    color: $fontColorBlack;
+  }
+  .primary100 {
+    background-color: $primary100;
+    height: 50px;
+    color: $fontColorBlack;
+  }
+  .primary50 {
+    background-color: $primary50;
+    height: 50px;
+    color: $fontColorBlack;
+  }
+  // Primary Text Emphasis
+  .primaryEp {
+    background-color: $primaryEp;
+    height: 200px;
+    .col {
+      .primaryEp87 {
+        margin-top: 35px;
+        color: $primaryEp87;
+      }
+      .primaryEp75 {
+        color: $primaryEp75;
+      }
+      .primaryEp38 {
+        color: $primaryEp38;
+        display: block;
+      }
+    }
+  }
+  // Primary Black Text
+  .primaryBlackTEm {
+    background-color: $primaryBlackTEm;
+    height: 100%;
+    margin-bottom: 20px;
+    .primaryBlackT87 {
+      color: $primaryBlackT87;
+      margin-top: 20px;
+    }
+    .primaryBlackT60 {
+      color: $primaryBlackT60;
+    }
+    .primaryBlackT38 {
+      color: $primaryBlackT38;
+    }
+  }
+  // Primary White Text
+  .primaryWhiteTEm {
+    background-color: $primaryWhiteTEm;
+    height: 100%;
+    .primaryWhiteT100 {
+      color: $primaryWhiteT100;
+      margin-top: 20px;
+    }
+    .primaryWhiteT60 {
+      color: $primaryWhiteT60;
+    }
+    .primaryWhiteT38 {
+      color: $primaryWhiteT38;
+    }
+  }
+
+
+  // Secondary
+  .secondary {
+    background-color: $Secondary;
+    height: 100px;
+    color: #FFFFFF;
+  }
+  .secondary900 {
+    background-color: $secondary900;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .secondary800 {
+    background-color: $secondary800;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .secondary700 {
+    background-color: $secondary700;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .secondary600 {
+    background-color: $secondary600;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .secondary500 {
+    background-color: $secondary500;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .secondary400 {
+    background-color: $secondary400;
+    height: 50px;
+    color: #000;
+  }
+  .secondary300 {
+    background-color: $secondary300;
+    height: 50px;
+    color: #000;
+  }
+  .secondary200 {
+    background-color: $secondary200;
+    height: 50px;
+    color: #000;
+  }
+  .secondary100 {
+    background-color: $secondary100;
+    height: 50px;
+    color: #000;
+  }
+  .secondary50 {
+    background-color: $secondary50;
+    height: 50px;
+    color: #000;
+  }
+  // Secondary Text Emphasis
+  .secondaryEp {
+    background-color: $secondaryEp;
+    height: 200px;
+    .secondaryEp100 {
+      color: $secondaryEp100;
+      margin-top: 35px;
+    }
+    .secondaryEp60 {
+      color: $secondaryEp60;
+    }
+    .secondaryEp38 {
+      color: $secondaryEp38;
+    }
+  }
+  // Secondary Black Text
+  .secondaryBlackTEm {
+    background-color: $secondaryBlackTEm;
+    height: 100%;
+    margin-bottom: 20px;
+    .secondaryBlackT87 {
+      color: $secondaryBlackT87;
+      margin-top: 20px;
+    }
+    .secondaryBlackT60 {
+      color: $secondaryBlackT60;
+    }
+    .secondaryBlackT38 {
+      color: $secondaryBlackT38;
+    }
+  }
+  // Secondary White Text
+  .secondaryWhiteTEm {
+    background-color: $secondaryWhiteTEm;
+    height: 100%;
+  }
+  .secondaryWhiteT100 {
+    color: $secondaryWhiteT100;
+    margin-top: 20px;
+  }
+  .secondaryWhiteT60 {
+    color: $secondaryWhiteT60;
+  }
+  .secondaryWhiteT38 {
+    color: $secondaryWhiteT38;
+  }
+
+
+  // Error
+  .error1 {
+    background-color: $error1;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .error2 {
+    background-color: $error2;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .error3 {
+    background-color: $error3;
+    height: 50px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  // In Progress
+  .inPro1 {
+    background-color: $inPro1;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .inPro2 {
+    background-color: $inPro2;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .inPro3 {
+    background-color: $inPro3;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  // Completed
+  .comp1 {
+    background-color: $comp1;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .comp2 {
+    background-color: $comp2;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .comp3 {
+    background-color: $comp3;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  // Reserved
+  .reser1 {
+    background-color: $reser1;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .reser2 {
+    background-color: $reser2;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .reser3 {
+    background-color: $reser3;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  // Canceled
+  .cancel1 {
+    background-color: $cancel1;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .cancel2 {
+    background-color: $cancel2;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .cancel3 {
+    background-color: $cancel3;
+    height: 50px;
+    color: #FFFFFF;
+  }
+
+  
+  // Crediential
+  .cre1 {
+    background-color: $cre1;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .cre2 {
+    background-color: $cre2;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .cre3 {
+    background-color: $cre3;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .cre4 {
+    background-color: $cre4;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .cre5 {
+    background-color: $cre5;
+    height: 50px;
+    color: #FFFFFF;
+  }
+  .cre6 {
+    background-color: $cre6;
+    height: 50px;
+    color: #FFFFFF;
+  }
+}
+
+.name {
+  @include nameLeft;
+}
+.name2 {
+  @include nameLeft2;
+}
+.code {
+  @include codeRight;
+}
+.code2 {
+  @include codeRight2;
+}
+
+.emLeft {
+  @include emLeft;
+}
