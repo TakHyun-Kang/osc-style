@@ -1,0 +1,295 @@
+extends ../layouts/pages
+block append head
+	block title
+		- var title='OSC-Color'; // Page title
+
+block content
+	include ../components/header.pug
+	.container
+		.row
+			.col.title
+				h1.headerH1 COLOR
+				small.headerSmall Last revision : 2018. 08. 01.
+	section
+		.container.colorBox
+			- var surface = [{"surface mainHight":"surface mainHight", "surfaceText":"Surface", "surfaceCode":"#F6F8FD"}, {"light":"light", "lightText":"Light", "lightCode":"#FFFFFF"}, {"dark":"dark", "darkText":"Dark", "darkCode":"#E3E5EA"}, {"surfaceEp":"surfaceEp", "surfaceEp87":"Text on Surface / High Emphasis / Black 87%", "surfaceEp60":"Text on Surface / High Emphasis / Black 60%", "surfaceEp38":"Text on Surface / High Emphasis / Black 38%"}]
+			each val in surface
+				div.row( class = val )
+					div.col
+						if (val.surfaceText === "Surface")
+							span.name= val.surfaceText
+							span.code= val.surfaceCode
+						if (val.lightText === "Light")
+							span.name= val.lightText
+							span.code= val.lightCode
+						if (val.darkText === "Dark")
+							span.name= val.darkText
+							span.code= val.darkCode
+						if (val.surfaceEp87 === "Text on Surface / High Emphasis / Black 87%")
+							.emLeft.surfaceEp87= val.surfaceEp87
+							.emLeft.surfaceEp60= val.surfaceEp60
+							.emLeft.surfaceEp38= val.surfaceEp38
+	section
+		.container.colorBox
+			|     
+			.row.primary.mainHight
+				.col
+					span.name Primary
+					|         
+					span.code #228BE6
+			|     
+			.row
+				.col.primary900
+					span.name 900
+					|         
+					span.code #0F4AA2
+				|       
+				.col.primary400
+					span.name 400
+					|         
+					span.code #45A8F6
+			|     
+			.row
+				.col.primary800
+					span.name 800
+					|         
+					span.code #1868C1
+				|       
+				.col.primary300
+					span.name 300
+					|         
+					span.code #66B7F7
+			|     
+			.row
+				.col.primary700
+					span.name 700
+					|         
+					span.code #1C79D3
+				|       
+				.col.primary200
+					span.name 200
+					|         
+					span.code #91CCF9
+			|     
+			.row
+				.col.primary600
+					span.name 600
+					|         
+					span.code #228BE6
+				|       
+				.col.primary100
+					span.name 100
+					|         
+					span.code #BCDFFB
+			|     
+			.row
+				.col.primary500
+					span.name 500
+					|         
+					span.code #2699F4
+				|       
+				.col.primary50
+					span.name 50
+					|         
+					span.code #E3F2FD
+			|     
+			.row.primaryEp
+				.col
+					.emLeft.primaryEp87 Text on Primary / High Emphasis / Black 87%
+					|         
+					.emLeft.primaryEp75 Text on Primary / Medium Emphasis / Black 75%
+					|         
+					.emLeft.primaryEp38 Text on Primary / Disabled / Black 38%
+			|     
+			.row
+				.col.primaryBlackTEm
+					.emLeft.primaryBlackT87 Black Text / High Emphasis / Black 87%
+					|         
+					.emLeft.primaryBlackT60 Black Text / Medium Emphasis / Black 60%
+					|         
+					.emLeft.primaryBlackT38 Black Text / Disabled / Black 38%
+				|       
+				.col.primaryWhiteTEm
+					.emLeft.primaryWhiteT100 White Text / High Emphasis / Black 100%
+					|         
+					.emLeft.primaryWhiteT60 White Text / Medium Emphasis / Black 60%
+					|         
+					.emLeft.primaryWhiteT38 White Text / Disabled / Black 38%
+			|     
+			.row.secondary.mainHight
+				.col
+					span.name Secondary
+					|         
+					span.code #1B2535
+			|     
+			.row
+				.col.secondary900
+					span.name 900
+					|         
+					span.code #2699F4
+				|       
+				.col.secondary400
+					span.name 400
+					|         
+					span.code #E3F2FD
+			|     
+			.row
+				.col.secondary800
+					span.name 800
+					|         
+					span.code #2D384C
+				|       
+				.col.secondary300
+					span.name 300
+					|         
+					span.code #8995AE
+			|     
+			.row
+				.col.secondary700
+					span.name 700
+					|         
+					span.code #3C4A62
+				|       
+				.col.secondary200
+					span.name 200
+					|         
+					span.code #A9B3C8
+			|     
+			.row
+				.col.secondary600
+					span.name 600
+					|         
+					span.code #4D5D78
+				|       
+				.col.secondary100
+					span.name 100
+					|         
+					span.code #C8D2E3
+			|     
+			.row
+				.col.secondary500
+					span.name 500
+					|         
+					span.code #5A6A89
+				|       
+				.col.secondary50
+					span.name 50
+					|         
+					span.code #E8ECFA
+			|     
+			.row.secondaryEp
+				.col
+					.emLeft.secondaryEp100 Text on Secondary / High Emphasis / Black 100%
+					|         
+					.emLeft.secondaryEp60 Text on Secondary / Medium Emphasis / Black 60%
+					|         
+					.emLeft.secondaryEp38 Text on Secondary / Disabled / Black 38%
+			|     
+			.row
+				.col.secondaryBlackTEm
+					.emLeft.secondaryBlackT87 Black Text / High Emphasis / Black 87%
+					|         
+					.emLeft.secondaryBlackT60 Black Text / Medium Emphasis / Black 60%
+					|         
+					.emLeft.secondaryBlackT38 Black Text / Disabled / Black 38%
+				|       
+				.col.secondaryWhiteTEm
+					.emLeft.secondaryWhiteT100 White Text / High Emphasis / Black 100%
+					|         
+					.emLeft.secondaryWhiteT60 White Text / Medium Emphasis / Black 60%
+					|         
+					.emLeft.secondaryWhiteT38 White Text / Disabled / Black 38%
+			|     
+			.row
+				.col.error1
+					.code2 #ffa8a8
+				|       
+				.col.inPro1
+					.code2 #ffe066
+				|       
+				.col.comp1
+					.code2 #91ccf9
+				|       
+				.col.reser1
+					.code2 #63e6be
+				|       
+				.col.cancel1
+					.code2 #b197fc
+			|     
+			.row
+				.col.error2
+					span.name2 Error
+					|         
+					span.code2 #ff6d6d
+				|       
+				.col.inPro2
+					span.name2 In Progress
+					|         
+					span.code2 #fcc419
+				|       
+				.col.comp2
+					span.name2 Completed
+					|         
+					span.code2 #228be6
+				|       
+				.col.reser2
+					span.name2 Reserved
+					|         
+					span.code2 #20c997
+				|       
+				.col.cancel2
+					span.name2 Canceled
+					|         
+					span.code2 #845ef7
+			|     
+			.row
+				.col.error3
+					.code2 #f03e3e
+				|       
+				.col.inPro3
+					.code2 #f59f00
+				|       
+				.col.comp3
+					.code2 #1868c1
+				|       
+				.col.reser3
+					.code2 #0ca678
+				|       
+				.col.cancel3
+					.code2 #7048e8
+			|     
+			.row
+				.col.cre1
+					span.name2 Crediential #1
+					|         
+					span.code2 #ec008c
+				|       
+				.col.cre4
+					span.name2 Crediential #4
+					|         
+					span.code2 #199d6d
+			|     
+			.row
+				.col.cre2
+					span.name2 Crediential #2
+					|         
+					span.code2 #ec4300
+				|       
+				.col.cre5
+					span.name2 Crediential #5
+					|         
+					span.code2 #0098b8
+			|     
+			.row
+				.col.cre3
+					span.name2 Crediential #3
+					|         
+					span.code2 #502bbe
+				|       
+				.col.cre6
+					span.name2 Crediential #6
+					|         
+					span.code2 #ff9c00
+
+			
+		div.container.made Made by majac

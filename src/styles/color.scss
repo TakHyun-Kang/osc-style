@@ -38,7 +38,6 @@
   .surface {
     background-color: $Surface;
     color: $fontColorBlack;
-    height: 100px;
   }
   .light {
     background-color: $Light;
@@ -73,7 +72,6 @@
   // Primary
   .primary {
     background-color: $Primary;
-    height: 100px;
     color: $fontColorBlack;
   }
   .primary900 {
@@ -147,7 +145,6 @@
   // Primary Black Text
   .primaryBlackTEm {
     background-color: $primaryBlackTEm;
-    height: 100%;
     margin-bottom: 20px;
     .primaryBlackT87 {
       color: $primaryBlackT87;
@@ -163,7 +160,7 @@
   // Primary White Text
   .primaryWhiteTEm {
     background-color: $primaryWhiteTEm;
-    height: 100%;
+    margin-bottom: 20px;
     .primaryWhiteT100 {
       color: $primaryWhiteT100;
       margin-top: 20px;
@@ -180,7 +177,6 @@
   // Secondary
   .secondary {
     background-color: $Secondary;
-    height: 100px;
     color: #FFFFFF;
   }
   .secondary900 {
@@ -251,7 +247,6 @@
   // Secondary Black Text
   .secondaryBlackTEm {
     background-color: $secondaryBlackTEm;
-    height: 100%;
     margin-bottom: 20px;
     .secondaryBlackT87 {
       color: $secondaryBlackT87;
@@ -267,7 +262,7 @@
   // Secondary White Text
   .secondaryWhiteTEm {
     background-color: $secondaryWhiteTEm;
-    height: 100%;
+    margin-bottom: 20px;
   }
   .secondaryWhiteT100 {
     color: $secondaryWhiteT100;
@@ -412,4 +407,8 @@
 
 .emLeft {
   @include emLeft;
+}
+
+.mainHight {
+  height: 100px;
 }

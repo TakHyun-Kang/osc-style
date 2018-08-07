@@ -1,7 +1,7 @@
 // Last revision : 2018. 08. 01.
 
 
-
+$pageMainColor: #2992E5;
 $fontColorBlack: #3B3F43;
 
 
@@ -113,7 +113,7 @@ $cre6: #ff9c00;
 body {
 
   .title {
-    margin: 50px 100px;
+    margin: 50px 0;
     .headerH1 {
       color: $fontColorBlack;
     }
@@ -122,7 +122,11 @@ body {
       font-size: 10px;
     }
   }
+  .made {
+    margin-bottom: 50px;
+  }
 }
 
 @import './color';
 @import './font';
+@import './header'

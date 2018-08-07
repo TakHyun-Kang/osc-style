@@ -1,0 +1,58 @@
+.Header {
+  background-color: rgba(255,255,255,0.6);
+  box-shadow: 0px 1px 10px 1px #858482;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  height: 70px;
+  .logo {
+    display: inline-block;
+    font-size: 45px;
+    margin-left: 35px;
+    color: $pageMainColor;
+    text-decoration: none;
+  }
+  .Header__topbar {
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: 100px;
+    top: 2px;
+    .navMenu {
+      display: inline-block;
+      margin-left: 20px;
+      a {
+        text-decoration: none;
+        color: $pageMainColor;
+        font-size: 25px;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        display: inline-block;
+        text-align: center;
+        line-height: 2.6;
+        transition: .6s;
+        &:hover {
+          display: inline-block;
+          box-shadow: 0px 1px 10px 1px #858482;
+          border-radius: 50%;
+          width: 65px;
+          height: 65px;
+          opacity: .5;
+          text-align: center;
+          line-height: 2.6;
+          background-color: $pageMainColor;
+          color: #FFFFFF;
+        }
+        &:active {
+          box-shadow: 0px 1px 20px 1px $pageMainColor;
+          transition: none;
+        }
+      }
+    }
+    .navFirst {
+      margin-left: 0;
+    }
+
+  }
+}
