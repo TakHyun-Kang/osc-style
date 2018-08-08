@@ -13,7 +13,7 @@
     "deploy": "node build/build.js && gh-pages -d dist",
     "build": "node build/build.js"
   },
-  "author": "MAJAC LIM <majac6@gmail.com>",
+  "author": "MAJAC LIM <majac6@gmail.com>, TakHyun Kang<azx1054@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
