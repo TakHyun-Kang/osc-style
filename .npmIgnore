@@ -1,0 +1,9 @@
+build/*
+config/*
+dist/
+npm_modules/
+source/
+src/*
+static/*
+
+.*

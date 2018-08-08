@@ -1,3 +1,3 @@
 # Open Source Consultion Style
 
-- https://github.com/SinanMtl/webpack-simple-starter
+작성 준비중..
