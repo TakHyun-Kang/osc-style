@@ -3,9 +3,10 @@ var config = require('../config')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 exports.assetsPath = function (_path) {
-  var assetsSubDirectory = process.env.NODE_ENV === 'production'
-    ? config.build.assetsSubDirectory
-    : config.dev.assetsSubDirectory
+  var assetsSubDirectory =
+    process.env.NODE_ENV === 'production'
+      ? config.build.assetsSubDirectory
+      : config.dev.assetsSubDirectory
   return path.posix.join(assetsSubDirectory, _path)
 }
 
@@ -28,14 +29,12 @@ exports.cssLoaders = function (options) {
         {
           loader: 'postcss-loader',
           options: {
-              sourceMap: options.sourceMap,
-              plugins: function() {
-                  return [
-                      require('autoprefixer')
-                  ]
-              }
+            sourceMap: options.sourceMap,
+            plugins: function () {
+              return [require('autoprefixer')]
+            }
           }
-        }, 
+        },
         {
           loader: loader + '-loader',
           options: Object.assign({}, loaderOptions, {
@@ -80,9 +79,9 @@ exports.pageFile = function (dev = true) {
   const fs = require('fs')
   const path = require('path')
   const testFolder = path.resolve(__dirname, '../src/views/pages')
-  
+
   var list = []
-  
+
   fs.readdirSync(testFolder).forEach(fileItem => {
     var file = path.resolve(__dirname, `${testFolder}/${fileItem}`)
     var distfile = fileItem.replace('.pug', '.html')

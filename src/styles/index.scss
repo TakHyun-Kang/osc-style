@@ -1,117 +1,11 @@
 // Last revision : 2018. 08. 01.
-
-
-$pageMainColor: #2992E5;
-$fontColorBlack: #3B3F43;
-
-
-// Surface
-$Surface: #F6F8FD;
-$Light: #FFFFFF;
-$Dark: #E3E5EA;
-// Surface Text Emphasis
-$surfaceEp: #F5F7FC;
-$surfaceEp87: #1D1E1E;
-$surfaceEp60: #5B5C5E;
-$surfaceEp38: #8D8E91;
-
-
-// Primary
-$Primary: #228BE6;
-$primary900: #0F4AA2;
-$primary800: #1868C1;
-$primary700: #1C79D3;
-$primary600: #228BE6;
-$primary500: #2699F4;
-$primary400: #45A8F6;
-$primary300: #66B7F7;
-$primary200: #91CCF9;
-$primary100: #BCDFFB;
-$primary50: #E3F2FD;
-// Primary Text Emphasis
-$primaryEp: #3980DA;
-$primaryEp87: #0B1722;
-$primaryEp75: #122438;
-$primaryEp38: #234E84;
-// Primary Black Text
-$primaryBlackTEm: #E2EFFB;
-$primaryBlackT87: #242627;
-$primaryBlackT60: #585C61;
-$primaryBlackT38: #878F95;
-// Primary White Text
-$primaryWhiteTEm: #1D4292;
-$primaryWhiteT100: #FFFFFF;
-$primaryWhiteT60: #99ADD0;
-$primaryWhiteT38: #6683B9;
-
-
-// Secondary
-$Secondary: #1B2535;
-$secondary900: #1B2535;
-$secondary800: #2D384C;
-$secondary700: #3C4A62;
-$secondary600: #4D5D78;
-$secondary500: #5A6A89;
-$secondary400: #717F9B;
-$secondary300: #8995AE;
-$secondary200: #A9B3C8;
-$secondary100: #C8D2E3;
-$secondary50: #E8ECFA;
-// Secondary Text Emphasis
-$secondaryEp: #1B212D;
-$secondaryEp100: #EFEFEF;
-$secondaryEp60: #90939A;
-$secondaryEp38: #60656D;
-// Secondary Black Text
-$secondaryBlackTEm: #E5E9F7;
-$secondaryBlackT87: #252527;
-$secondaryBlackT60: #595A60;
-$secondaryBlackT38: #8C8F96;
-// Secondary White Text
-$secondaryWhiteTEm: #1B212D;
-$secondaryWhiteT100: #FFFFFF;
-$secondaryWhiteT60: #9A9DA3;
-$secondaryWhiteT38: #676C75;
-
-
-// Error
-$error_200: #ffa8a8;
-$error_500: #ff6d6d;
-$error_800: #f03e3e;
-// In Progress
-$inProgress_200: #ffe066;
-$inProgress_500: #fcc419;
-$inProgress_800: #f59f00;
-// Completed
-$completed_200: #91ccf9;
-$completed_500: #228be6;
-$completed_800: #1868c1;
-// Reserved
-$reserved_200: #63e6be;
-$reserved_500: #20c997;
-$reserved_800: #0ca678;
-// Canceled
-$canceled_200: #b197fc;
-$canceled_500: #845ef7;
-$canceled_800: #7048e8;
-
-
-// Crediential
-$crediential_1: #ec008c;
-$crediential_2: #ec4300;
-$crediential_3: #502bbe;
-$crediential_4: #199d6d;
-$crediential_5: #0098b8;
-$crediential_6: #ff9c00;
-
-
+@import './variable';
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-
   .title {
     margin: 50px 0;
     .headerH1 {
