@@ -1,13 +1,11 @@
 // Last revision : 2018. 08. 01.
-
-
-
 @mixin lineMiddle {
   display: table-cell;
   vertical-align: middle;
   height: 70px;
-};
+}
 
+;
 .fontBox {
   font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   .fontH1 {

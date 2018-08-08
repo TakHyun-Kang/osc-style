@@ -1,46 +1,48 @@
 // Last revision : 2018. 08. 01.
-
-
-
 @mixin rowLayout {
   flex-direction: column;
   position: relative;
-};
+}
 
+;
 @mixin titleColorLayout {
   width: 100%;
   position: absolute;
   top: 0;
-};
+}
 
+;
 @mixin textLower {
   position: relative;
   top: 100px;
-};
+}
 
+;
 @mixin nameLeft {
   margin: 15px 15px;
   display: inline-block;
-};
+}
 
+;
 @mixin codeRight {
   float: right;
   position: relative;
   right: 25px;
   top: 15px;
-};
+}
 
+;
 @mixin emLeft {
   margin: 15px 15px;
   display: block;
   line-height: 2;
-};
+}
 
+;
 .colorBox {
   margin-bottom: 200px;
-  .row{
-    @include rowLayout;
-    // Surface
+  .row {
+    @include rowLayout; // Surface
     .surface {
       background-color: $Surface;
       color: $fontColorBlack;
@@ -54,8 +56,7 @@
       background-color: $Dark;
       color: $fontColorBlack;
       height: 50px;
-    }
-    // Surface Text Emphasis
+    } // Surface Text Emphasis
     .surfaceEp {
       background-color: $surfaceEp;
       height: 200px;
@@ -69,10 +70,7 @@
       .surfaceEp38 {
         color: $surfaceEp38;
       }
-    }
-
-
-    // Primary
+    } // Primary
     .primary {
       background-color: $Primary;
       color: $fontColorBlack;
@@ -126,24 +124,22 @@
       background-color: $primary50;
       height: 50px;
       color: $fontColorBlack;
-    }
-    // Primary Text Emphasis
+    } // Primary Text Emphasis
     .primaryEp {
       background-color: $primaryEp;
       height: 200px;
-        .primaryEp87 {
-          margin-top: 35px;
-          color: $primaryEp87;
-        }
-        .primaryEp75 {
-          color: $primaryEp75;
-        }
-        .primaryEp38 {
-          color: $primaryEp38;
-          display: block;
+      .primaryEp87 {
+        margin-top: 35px;
+        color: $primaryEp87;
       }
-    }
-    // Primary Black Text
+      .primaryEp75 {
+        color: $primaryEp75;
+      }
+      .primaryEp38 {
+        color: $primaryEp38;
+        display: block;
+      }
+    } // Primary Black Text
     .primaryBlackTEm {
       background-color: $primaryBlackTEm;
       .primaryBlackT87 {
@@ -156,8 +152,7 @@
       .primaryBlackT38 {
         color: $primaryBlackT38;
       }
-    }
-    // Primary White Text
+    } // Primary White Text
     .primaryWhiteTEm {
       background-color: $primaryWhiteTEm;
       .primaryWhiteT100 {
@@ -170,10 +165,7 @@
       .primaryWhiteT38 {
         color: $primaryWhiteT38;
       }
-    }
-
-
-    // Secondary
+    } // Secondary
     .secondary {
       background-color: $Secondary;
       color: #FFFFFF;
@@ -227,8 +219,7 @@
       background-color: $secondary50;
       height: 50px;
       color: #000;
-    }
-    // Secondary Text Emphasis
+    } // Secondary Text Emphasis
     .secondaryEp {
       background-color: $secondaryEp;
       height: 200px;
@@ -242,8 +233,7 @@
       .secondaryEp38 {
         color: $secondaryEp38;
       }
-    }
-    // Secondary Black Text
+    } // Secondary Black Text
     .secondaryBlackTEm {
       background-color: $secondaryBlackTEm;
       .secondaryBlackT87 {
@@ -256,8 +246,7 @@
       .secondaryBlackT38 {
         color: $secondaryBlackT38;
       }
-    }
-    // Secondary White Text
+    } // Secondary White Text
     .secondaryWhiteTEm {
       background-color: $secondaryWhiteTEm;
     }
@@ -270,10 +259,7 @@
     }
     .secondaryWhiteT38 {
       color: $secondaryWhiteT38;
-    }
-
-
-    // Error
+    } // Error
     .error_200 {
       background-color: $error_200;
       height: 50px;
@@ -288,8 +274,7 @@
       background-color: $error_800;
       height: 50px;
       color: #FFFFFF;
-    }
-    // In Progress
+    } // In Progress
     .inProgress_200 {
       background-color: $inProgress_200;
       height: 50px;
@@ -304,8 +289,7 @@
       background-color: $inProgress_800;
       height: 50px;
       color: #FFFFFF;
-    }
-    // Completed
+    } // Completed
     .completed_200 {
       background-color: $completed_200;
       height: 50px;
@@ -320,8 +304,7 @@
       background-color: $completed_800;
       height: 50px;
       color: #FFFFFF;
-    }
-    // Reserved
+    } // Reserved
     .reserved_200 {
       background-color: $reserved_200;
       height: 50px;
@@ -336,8 +319,7 @@
       background-color: $reserved_800;
       height: 50px;
       color: #FFFFFF;
-    }
-    // Canceled
+    } // Canceled
     .canceled_200 {
       background-color: $canceled_200;
       height: 50px;
@@ -352,10 +334,7 @@
       background-color: $canceled_800;
       height: 50px;
       color: #FFFFFF;
-    }
-
-
-    // Crediential
+    } // Crediential
     .crediential_1 {
       background-color: $crediential_1;
       height: 50px;
@@ -392,6 +371,7 @@
 .name {
   @include nameLeft;
 }
+
 .code {
   @include codeRight;
 }
@@ -408,18 +388,22 @@
   height: 200px;
   padding-top: 100px;
 }
+
 .primaryRowHeight {
   height: 350px;
   padding-top: 100px;
 }
+
 .secondaryRowHeight {
   height: 350px;
   padding-top: 100px;
 }
+
 .etcColorRowHeight {
   height: 150px;
   padding-top: 0;
 }
+
 .credientialRowHeight {
   height: 150px;
   padding-top: 0;
