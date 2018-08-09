@@ -27,10 +27,76 @@
   display: block;
   line-height: 2;
 };
+.navColorBox {
+  height: 25px;
+  text-align: center;
+  &::before {
+    content: "";
+    position: absolute;
+    border: 1px solid $secondary-500;
+    width: 100%;
+  }
+  .navColor {
+    padding: 20px 0;
+    text-decoration: none;
+    color: $secondary-500;
+    transition: .6s;
+    &::before {
+      content: "";
+      border: .5px solid $secondary-500;
+      border-radius: 1px;
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+  .Surface {
+    &:hover {
+      color: $Surface;
+    }
+    &::before {
+      background-color: $Surface;
+    }
+  }
+  .Primary {
+    &:hover {
+      color: $Primary;
+    }
+    &::before {
+      background-color: $Primary;
+    }
+  }
+  .Secondary {
+    &:hover {
+      color: $Secondary;
+    }
+    &::before {
+      background-color: $Secondary;
+    }
+  }
+  .EtcColor {
+    &:hover {
+      color: $inProgress-800;
+    }
+    &::before {
+      background-color: $inProgress-800;
+    }
+  }
+  .Crediential {
+    &:hover {
+      color: $crediential-1;
+    }
+    &::before {
+      background-color: $crediential-1;
+    }
+  }
+}
 section {
   padding: 50px 0;
   .row {
-    @include rowLayout; // Surface
+    @include rowLayout;
+    // Surface
     .surface {
       background-color: $Surface;
       color: $fontColorBlack;
@@ -424,4 +490,9 @@ section {
 
 .textLower {
   @include textLower;
+}
+
+.colorTitle {
+  padding: 30px 0;
+  color: $fontColorBlack;
 }
