@@ -6,17 +6,17 @@ OSC-Style is an open source color scheme optimized for the UI, such as fonts, co
 
 Using npm:
 
-    $ npm i --save open-color
+    $ npm i --save osc-style
 
 ## Available Styles
 
-https://tech.osci.kr/osc-style/
+https://tech.osci.kr/osc-style
 
 Please refer to the homepage.
 
 ## Currently Supported Formats
 
-Scss, Sass
+SCSS, Sass
 
 ## Usage
 
