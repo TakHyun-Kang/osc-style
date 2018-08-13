@@ -1,8 +1,21 @@
 {
   "name": "osc-style",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "homepage": "https://tech.osci.kr/osc-style/",
   "description": "Open Source Consultion style",
+  "keywords": [
+    "color",
+    "font",
+    "style",
+    "osc",
+    "osc-style",
+    "majac",
+    "opensourceconsulting",
+    "takhyun",
+    "colorscheme",
+    "SCSS",
+    "Sass"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OpenSourceConsulting/osc-style.git"
@@ -13,7 +26,7 @@
     "deploy": "node build/build.js && gh-pages -d dist",
     "build": "node build/build.js"
   },
-  "author": "TakHyun Kang<azx1054@gmail.com>",
+  "author": "TakHyun-Kang <azx1054@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.6",

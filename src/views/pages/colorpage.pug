@@ -10,10 +10,19 @@ block content
 			.col.title
 				h1.headerH1 COLOR
 				small.headerSmall Last revision : 2018. 08. 01.
+				
+	//- Color Navigator
+	section
+		.container
+			- var navColor = [{'key':'Surface'}, {'key':'Primary'}, {'key':'Secondary'}, {'key':'EtcColor'}, {'key':'Crediential'}]
+				.row.navColorBox
+					each item, index in navColor
+						a( href = "#"+item.key class = "navColor " + item.key ) #{item.key}
 
 	//- Surface
-	section
-		.container.colorBox
+	section#Surface
+		.container
+			h2.colorTitle Surface
 			include ../variables.pug
 				.row.surfaceRowHeight
 					each item, index in surface
@@ -32,8 +41,9 @@ block content
 							div( class = "emLeft" + " " + "surface" + item.textKey2 )= item.text2
 							div( class = "emLeft" + " " + "surface" + item.textKey3 )= item.text3
 	//- Primary
-	section
-		.container.colorBox
+	section#Primary
+		.container
+			h2.colorTitle Primary
 			include ../variables.pug
 				.row.primaryRowHeight
 					each item, index in primary
@@ -64,8 +74,9 @@ block content
 								div( class = "emLeft" + " " + "primary" + item.textKey9 )= item.text9
 
 	//- Secondary
-	section
-		.container.colorBox
+	section#Secondary
+		.container
+			h2.colorTitle Secondary
 			include ../variables.pug
 				.row.secondaryRowHeight
 					each item, index in secondary
@@ -96,8 +107,9 @@ block content
 								div( class = "emLeft" + " " + "secondary" + item.textKey9 )= item.text9
 
 	//- EtcColor
-	section
-		.container.colorBox
+	section#EtcColor
+		.container
+			h2.colorTitle EtcColor
 			include ../variables.pug
 				.row.etcColorRowHeight
 					each item, index in etcColor
@@ -106,8 +118,9 @@ block content
 							span.code #{item.color}
 
 	//- Crediential
-	section
-		.container.colorBox
+	section#Crediential
+		.container
+			h2.colorTitle Crediential
 			include ../variables.pug
 				.row.credientialRowHeight
 					each item, index in crediential
