@@ -1,7 +1,7 @@
 const _colorTab = document.getElementById('colorTab')
-const colorPath = '/colorpage.html'
+const colorPath = '/osc-style/colorpage.html'
 const _fontTab = document.getElementById('fontTab')
-const fontPath = '/fontpage.html'
+const fontPath = '/osc-style/fontpage.html'
 
 const _handleClick = () => {
   if (window.location.pathname === colorPath) {
