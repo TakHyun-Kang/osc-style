@@ -1,6 +1,6 @@
 {
   "name": "osc-style",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "homepage": "https://tech.osci.kr/osc-style/",
   "description": "Open Source Consultion style",
   "repository": {
@@ -13,7 +13,7 @@
     "deploy": "node build/build.js && gh-pages -d dist",
     "build": "node build/build.js"
   },
-  "author": "MAJAC LIM <majac6@gmail.com>, TakHyun Kang<azx1054@gmail.com>",
+  "author": "TakHyun Kang<azx1054@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
